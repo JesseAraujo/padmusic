@@ -1,0 +1,117 @@
+.loginContainer {
+    width: 100%;
+    height: 100vh;
+
+    background: var(--background-one);
+
+    position: relative;
+
+
+    .content {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    header {
+
+        img {
+            width: 180px;
+            height: 104px;
+            margin-top: 100px;
+
+
+           &:hover{               
+                cursor: pointer;
+                filter: opacity(95%)
+            }
+
+        }
+    }
+
+    main {
+        position: absolute;
+        bottom: 0;
+
+        height: 400px;
+        width: 100%;
+
+        background: var(--background-two); 
+
+        
+        form {
+            margin-top: 80px;
+            width: 300px;
+
+            p {
+                color: var(--gray);
+                font-weight: 700;
+                font-size: 1rem;
+            }
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 8px;
+
+                border-radius: 10px;
+                margin-bottom: 10px;
+
+                color: var(--gray-dark);                
+
+                &::placeholder {
+                    color: var(--gray-placeholder);
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: var(--gray);
+                border-radius: 10px;
+                background: var(--gray-dark);
+                cursor: pointer;
+                transition: background 400ms;
+
+                margin-top: 10px;
+
+                &:hover {
+                    background: var(--yellow);
+                    color: var(--background-one);
+                }
+            }
+        }
+
+        p {
+            font-size: 0.7rem;
+            font-weight: 400;
+
+            margin-top: 5px;
+
+            color: var(--gray);
+
+            a {
+                color: var(--yellow);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+        .imageBackground {
+            position: absolute; 
+            cursor: pointer;
+
+            width: 90%;
+            height: 720px;  
+            
+            top: -380px;
+            left: 0;
+
+            background: url(../../../public/background.svg) no-repeat 70%;
+        }
+
+    }
+}

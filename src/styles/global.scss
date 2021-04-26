@@ -1,0 +1,30 @@
+:root {
+    --background-one: #333333;
+    --background-two: #2F2F2F;
+
+    --gray: #DEDEDE;
+    --gray-dark: #676767;
+    --gray-placeholder: #8B8B8B;
+
+    --green: #37711C;
+    
+    --red: #BE3F3F;
+
+    --yellow: #EBCD62;         
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
