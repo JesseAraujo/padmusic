@@ -1,0 +1,24 @@
+.dashboardContainer {
+    width: 100%;
+    height: 100vh;
+    background: var(--background-one);
+
+
+    header {
+        width: 100%;
+        height: 90px;
+        background: var(--background-two);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1rem ;
+
+        img {
+            width: 79px;
+             height: 46px;
+        }
+    }   
+    
+}

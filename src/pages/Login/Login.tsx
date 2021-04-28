@@ -21,6 +21,7 @@ export function Login() {
         <div className={styles.loginContainer}>
 
             <div className={styles.content}>
+
                 <header>
                     <img src="/logo.svg" alt="Logo PadMusic" />
                 </header>
