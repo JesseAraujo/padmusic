@@ -27,4 +27,53 @@ a {
     text-decoration: none;
 }
 
+body, input, textarea, button {
+    font-family: Poppins, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    background: none;    
+
+    transition: 0.2s;
+
+    img {
+        width: 18px;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+button[type=submit] {
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--gray);
+    border-radius: 10px;
+    background: var(--gray-dark);
+    transition: background 400ms;
+
+    margin-top: 10px;
+
+        &:hover {
+            background: var(--yellow);
+            color: var(--background-one);
+        }
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 8px;
+
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+    color: var(--gray-dark);                
+
+        &::placeholder {
+            color: var(--gray-placeholder);
+        }
+}
 
