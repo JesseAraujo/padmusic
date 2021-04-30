@@ -1,24 +1,126 @@
 .dashboardContainer {
     width: 100%;
     height: 100vh;
-    background: var(--background-one);
+    background: var(--black-400);
 
 
     header {
         width: 100%;
         height: 90px;
-        background: var(--background-two);
+        background: var(--black-800);
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        padding: 1rem ;
+        padding: 3rem ;
 
         img {
-            width: 79px;
-             height: 46px;
+            width: 100px;
+        }
+
+        button {
+            .iconPower {
+                font-size: 2.5rem;
+                color: var(--gray-300);
+
+                &:hover {
+                    color: var(--yellow);
+                }
+            }
         }
     }   
+
+    main {
+        padding: 3rem ;
+
+        .mainHeader {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+            .welcomeName {
+                margin-left: 20px;
+
+                p {
+                    color: var(--gray-100);
+                    font-size: 0.875rem;
+                }
+
+                h2 {
+                    color: var(--yellow);
+                    font-weight: 700;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .gridPadReproduction {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+
+            padding-top: 40px;
+
+            .containerPads {
+                background: var(--gray-100);
+                padding: 30px;
+                border-radius: 10px;
+
+                display: block;
+                justify-content: end;
+
+                .contentPads {
+                    background: var(--withe);
+                    border-radius: 10px;
+                    padding: 30px;
+
+                    height: 400px;
+
+                    .searchPads {
+
+                        input {
+                            background: var(--gray-100);
+                        }
+                    }                    
+                }
+
+                button {
+                    width: 79px;
+                    height: 79px;
+                    background: var(--yellow);
+                    border-radius: 50%;
+                    margin-top: 20px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        background: var(--black-800);
+
+                        .iconAddButton {
+                            color: var(--yellow);
+                        }
+
+                    }
+
+                    .iconAddButton {
+                        color: var(--black-800);
+                        font-size: 2rem;
+                    }
+
+
+
+                }
+            }
+        }   
+    }
     
 }

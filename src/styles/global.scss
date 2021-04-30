@@ -1,16 +1,15 @@
 :root {
-    --background-one: #333333;
-    --background-two: #2F2F2F;
+    --black-400: #2F2F2F;
+    --black-800: #333333;
 
-    --gray: #DEDEDE;
-    --gray-dark: #676767;
-    --gray-placeholder: #8B8B8B;
+    --gray-100: #DEDEDE;
+    --gray-300: #8B8B8B;
+    --gray-500: #676767;
 
-    --green: #37711C;
-    
+    --green: #37711C;    
     --red: #BE3F3F;
-
     --yellow: #EBCD62;         
+    --withe: #ffffff;         
 }
 
 
@@ -50,16 +49,16 @@ button[type=submit] {
     padding: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--gray);
+    color: var(--gray-100);
     border-radius: 10px;
-    background: var(--gray-dark);
+    background: var(--gray-500);
     transition: background 400ms;
 
     margin-top: 10px;
 
         &:hover {
             background: var(--yellow);
-            color: var(--background-one);
+            color: var(--background-400);
         }
 }
 
@@ -70,7 +69,7 @@ input[type=text], input[type=password] {
     border-radius: 8px;
     margin-bottom: 10px;
 
-    color: var(--gray-dark);                
+    color: var(--gray-500);                
 
         &::placeholder {
             color: var(--gray-placeholder);

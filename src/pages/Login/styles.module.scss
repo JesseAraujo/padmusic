@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
 
-    background-image: linear-gradient(to bottom, var(--background-two) 55%, var(--background-one) 45%);
+    background-image: linear-gradient(to bottom, var(--background-800) 55%, var(--background-400) 45%);
 
     position: relative;
 
@@ -36,7 +36,7 @@
                 form {                
 
                     p {
-                        color: var(--gray);
+                        color: var(--gray-100);
                         font-weight: 700;
                         font-size: 1rem;
                     }
@@ -51,7 +51,7 @@
 
                 margin-top: 5px;
 
-                color: var(--gray);
+                color: var(--gray-100);
 
                 a {
                     color: var(--yellow);

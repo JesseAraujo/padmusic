@@ -1,4 +1,4 @@
-import { IoPowerSharp } from 'react-icons/io5'
+import { IoPowerSharp, IoAdd } from 'react-icons/io5'
 
 import styles from './styles.module.scss'
 
@@ -16,11 +16,39 @@ export default function Dashboard() {
             </header>
 
             <main>
-                <div>
-                    <img src="/me.png" alt="" />
-                    <p>Bem Vindo(a)</p>
-                    <h2>Jessé Brisola de Araujo</h2>
+                <div className={styles.mainHeader}>
+                    <img src="/me.png" alt="Foto usuário" />
+                    <div className={styles.welcomeName}>
+                        <p>Bem Vindo(a)</p>
+                        <h2>Jessé Brisola de Araujo</h2>
+                    </div>
                 </div>
+
+                <div className={styles.gridPadReproduction}>
+                    <div className={styles.containerPads}>
+                        <div className={styles.contentPads}>
+                            <div className={styles.searchPads}>
+                                <input type="text" />
+                            </div>
+                        </div>
+
+                        <button type="button">
+                            <IoAdd className={styles.iconAddButton} />
+                        </button>
+                    </div>
+
+                    <div>
+                        <p>Lista de <span>reprodução</span></p>
+
+                        <div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </main>
 
